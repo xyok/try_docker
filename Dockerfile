@@ -10,8 +10,8 @@ RUN yum update -y
 RUN yum install -y nginx patch
 
 # apply patched configuration
-ADD etc/nginx/nginx.conf.patch /etc/nginx/nginx.conf.patch
-RUN patch /etc/nginx/nginx.conf < /etc/nginx/nginx.conf.patch
+#ADD etc/nginx/nginx.conf.patch /etc/nginx/nginx.conf.patch
+#RUN patch /etc/nginx/nginx.conf < /etc/nginx/nginx.conf.patch
 
 #ENV NGINX_VERSION 1.7.12
 
